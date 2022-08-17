@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,700&family=Poppins:wght@100;200;400;500;600;700&display=swap");
+
+@layer base {
+  li {
+    @apply px-4 cursor-pointer hover:text-light-blue hover:underline hover:underline-offset-2 hover:transition hover:duration-300 active:text-light-blue;
+  }
+
+  button {
+    @apply bg-light-blue py-2 px-4 rounded-full;
+  }
+
+  * {
+    @apply text-white;
+  }
+
+  input,
+  select {
+    @apply bg-box-blue px-4 py-2 rounded-xl w-full m-2 ml-0 md:m-0;
+  }
+
+  th {
+    @apply p-2 font-bold text-xl text-black;
+  }
+
+  td {
+    @apply p-2 text-center text-black;
+  }
+
+  tr {
+    @apply border border-slate-500;
+  }
+}
